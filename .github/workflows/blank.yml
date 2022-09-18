@@ -22,9 +22,9 @@ jobs:
           #  * smtp://user:password@server:port
           #  * smtp+starttls://user:password@server:port
           connection_url: ${{secrets.MAIL_CONNECTION}}
-          server_address: smtp.s2milhas.com.br
-          server_port: 465
-          secure: true
+          server_address: ${{secrets.MAIL_SERVER_ADDRESS}}
+          server_port: 587
+          secure: false
           username: ${{secrets.MAIL_USERNAME}}
           password: ${{secrets.MAIL_PASSWORD}}
           subject: Github Actions job result
