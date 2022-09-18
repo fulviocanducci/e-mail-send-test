@@ -1,4 +1,4 @@
-name: CI
+name: Send_E_mail_Secure
 
 on: 
   workflow_dispatch:
